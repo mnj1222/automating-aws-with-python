@@ -13,7 +13,7 @@ def cli():
 def list_buckets():
     "List all S3 buckets"
     for bucket in s3.buckets.all():
-        print(bucket)ls
+        print(bucket)
 
 @cli.command('list-bucket-objects')
 @click.argument('bucket')
